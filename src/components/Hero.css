@@ -1,0 +1,49 @@
+.hero {
+	padding-top: 120px;
+
+}
+
+h1 {
+	font-weight: 800;
+	font-color: black;
+}
+
+.smicons {
+	display: inline-block;
+	padding:10px;
+	margin: 20px 8px 20px 8px;
+    border: 1px solid black;
+    border-radius: 8px;
+    color: white;
+    background-color: black;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.fa {
+	color: #fff;
+	text-decoration: none;
+	font-weight: 200;
+}
+
+.fa:hover {
+	color:#888;
+}
+
+.hoverblock
+{
+	position: absolute;
+    left: 0%;
+    top: 0%;
+    right: 0%;
+    bottom: auto;
+    z-index: -1;
+    display: block;
+    overflow: hidden;
+    height: 100%;
+    background-color: #ffd855;
+    background-image: linear-gradient(45deg, rgba(255, 208, 30, 0.6), rgba(255, 216, 85, 0.68) 51%, rgba(255, 216, 85, 0.6)), url(../static/images/swhk.bg-cropped.jpeg);
+    background-position: 75% -90%;
+    background-size: auto, cover;
+    background-attachment: scroll, fixed;
+}

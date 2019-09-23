@@ -1,0 +1,43 @@
+.navbar {
+	position:fixed;
+	width:100%;
+	background-color: #ffd01e;
+}
+
+.container 
+{
+	display: inline-block;
+	vertical-align:top;
+	max-width: 1200px;
+	max-height: 100px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-right: 10px;
+	padding-left: 10px;
+	float: left;
+}
+
+@media (max-width: 991px) {
+	.container {
+	    padding-right: 20px;
+	    padding-left: 20px;
+	}
+}
+
+.app-logo {
+	margin:10px;
+	width:80px;
+	height:80px;
+}
+
+.nav-title 
+{
+	display: inline;
+	position:absolute;
+	white-space:nowrap;
+}
+
+.navtitle {
+	font-weight: 800;
+	padding:10px
+}
