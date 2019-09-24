@@ -1,18 +1,18 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "be0565dd949d0f13aea6bef960593fcd",
+    "revision": "47f55b777f07d93720baa54a35c10441",
     "url": "/free-hk-petition-ie/index.html"
   },
   {
-    "revision": "8ec3f6d18842e2e3f033",
-    "url": "/free-hk-petition-ie/static/css/main.f84e648a.chunk.css"
+    "revision": "1218c00f56236a19f2e3",
+    "url": "/free-hk-petition-ie/static/css/main.6ea96e72.chunk.css"
   },
   {
     "revision": "a5bcb43c4ae694b22820",
     "url": "/free-hk-petition-ie/static/js/2.4b54d2b2.chunk.js"
   },
   {
-    "revision": "8ec3f6d18842e2e3f033",
+    "revision": "1218c00f56236a19f2e3",
     "url": "/free-hk-petition-ie/static/js/main.2d6fd1c2.chunk.js"
   },
   {
