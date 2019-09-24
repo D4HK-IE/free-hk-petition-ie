@@ -1,27 +1,20 @@
 .navbar {
 	position:fixed;
-	width:100%;
+	width:120%;
 	background-color: #ffd01e;
 }
 
 .container 
 {
-	display: inline-block;
+	display: block;
 	vertical-align:top;
-	max-width: 1200px;
+	max-width: 100%;
 	max-height: 100px;
 	margin-right: auto;
 	margin-left: auto;
 	padding-right: 10px;
 	padding-left: 10px;
 	float: left;
-}
-
-@media (max-width: 991px) {
-	.container {
-	    padding-right: 20px;
-	    padding-left: 20px;
-	}
 }
 
 .app-logo {
@@ -40,4 +33,18 @@
 .navtitle {
 	font-weight: 800;
 	padding:10px
+}
+
+
+@media (max-width: 768px) {
+	.container {
+	    padding-right: 20px;
+	    padding-left: 20px;
+	    display: block;
+	}
+	.navtitle {
+	font-weight: 800;
+	font-size: 18px;
+	padding:10px;
+}
 }

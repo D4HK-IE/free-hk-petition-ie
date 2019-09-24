@@ -6,10 +6,18 @@
 h1 {
 	font-weight: 800;
 	font-color: black;
+    margin-left: 10px;
+  /*  position:absolute;*/
+}
+
+.header {
+    display: block;
 }
 
 .smicons {
-	display: inline-block;
+	display: block;
+    width:180px;
+    height: 40%;
 	padding:10px;
 	margin: 20px 8px 20px 8px;
     border: 1px solid black;
@@ -32,6 +40,8 @@ h1 {
 
 .hoverblock
 {
+    width:165%;
+    height:100%;
 	position: absolute;
     left: 0%;
     top: 0%;

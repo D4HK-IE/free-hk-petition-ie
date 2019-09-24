@@ -20,14 +20,16 @@ import './Hero.css';
 const Hero = () => {
 	return (
 		<div className="hero">
-			<div className="container hiz w-clearfix">
-				<h1>Stand with Hong Kong.<br/> Be their voice in Irish Parliament.</h1>
-				<div className="smicons">Share this:&nbsp;
-					<a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.standwithhk.org" target="_blank" rel="noopener noreferrer" className="fa fa-facebook"> </a>&nbsp;&nbsp;
-                    <a href="https://twitter.com/intent/tweet?text=Please+send+a+strong+message+to+our+new+Prime+Minister+that+Britain+must+stand+by+its+promises+and+defend+Hong+Kong%E2%80%99s+freedom.+https%3A%2F%2Fwww.standwithhk.org" target="_blank" rel="noopener noreferrer" className="fa fa-twitter"> </a> &nbsp;
-                    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Fwww.standwithhk.org&amp;title=StandWithHK&amp;summary=Stand%20With%20Hong%20Kong&amp;source=" target="_blank" rel="noopener noreferrer" className="fa fa-linkedin"> </a>
+			
+				<div className="header">
+					<h1>Stand with Hong Kong.<br/> Be their voice in Dáil.</h1>
 				</div>
-			</div>
+				<div className="smicons">Share this:&nbsp;
+					<a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//d4hk-ie.github.io/free-hk-petition-ie/" target="_blank" rel="noopener noreferrer" className="fa fa-facebook"> </a>&nbsp;&nbsp;
+                    <a href="https://twitter.com/intent/tweet?text=https%3A/d4hk-ie.github.io/free-hk-petition-ie/" target="_blank" rel="noopener noreferrer" className="fa fa-twitter"> </a> &nbsp;
+                    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A//d4hk-ie.github.io/free-hk-petition-ie/&title=&summary=&source=" target="_blank" rel="noopener noreferrer" className="fa fa-linkedin"> </a>
+				</div>
+			
 			<div className="hoverblock">
 			</div>
 		</div>
