@@ -10,3 +10,7 @@ body {
 div {
 	display:block;
 }
+
+.emails {
+	font-size: 12px;
+}

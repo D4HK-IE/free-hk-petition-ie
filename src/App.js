@@ -102,7 +102,7 @@ class App extends Component {
             <p>Hong Kong's fundamental freedoms, rights, rule of law and democracy are under attack.
             Please help by writing to your TD and asking them,</p>
             <p>1. To review Ireland's business relationship with China (Does Ireland want to be friends of a dictatorship?)</p>
-            <p>2. To review immigration policy, especially investment immigration (Do we let whoever has money to become Irish?)</p>
+            <p>2. To review investment immigration programme (Do we let whoever has money to jump the immigration queue with no question asked?)</p>
             <p>3. To enquire the role of Confucius Institute at UCD? (Why do we allow a communist propaganda machine in our university?)</p>
           </div>
           <div className="formblock">
@@ -189,7 +189,7 @@ class App extends Component {
         <div className="w-richtext">
           <h4>Call for review on Ireland-China relations</h4>
           <div className="td-letter">
-             <span><b>To:</b> {this.state.listOfEmails.map(email => (
+             <span className="emails"><b>To:</b> {this.state.listOfEmails.map(email => (
                  <span>{email};<br/></span>
                ))}
               </span><br/>
