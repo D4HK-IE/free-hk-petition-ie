@@ -1,6 +1,7 @@
 import React from 'react'
 import './Main.css';
 
+{/* NOT IN USE */}
 const Main = () => {
 	
 	return (

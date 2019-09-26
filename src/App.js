@@ -37,7 +37,8 @@ class App extends Component {
   handleSubmit(e) {
     e.preventDefault();
     // var url ="http://localhost:3210";
-    var url ="https://d4hk-ireland-td-email.herokuapp.com/";
+    // var url = "https://d4hk-ireland-td-email.herokuapp.com/";
+    var url ="http://ec2-52-50-99-211.eu-west-1.compute.amazonaws.com/";
     var emailslist = [];
     var nameslist = "";
     var body = "";
@@ -66,23 +67,9 @@ class App extends Component {
             document.location.href = window.location.href;
             window.location.href = "mailto:" + this.state.listOfEmails + "?subject=Call for review on Ireland-China relations" + 
             "&body=" + body;
-
             // window.location.reload();
             this.setState({aftermsg: "If the browser doesn't redirect to your email web app page (e.g. gmail), please free feel to copy the template from the left hand side (subject, email addresses, content are auto-generated) and send it manually."})
-           
         },1000);
-      //handle autofill
-      // for (var i = 0; i < res.data.length; i++)
-      // {
-      //   emailslist += res.data[i]['email'] + ";";
-      //     // console.log(res.data[i]['email'])
-      // }
-    //   console.log(emailslist);
-    //   this.setState({listOfEmails:emailslist});
-    // }).catch(function (error) {
-    //     //handle errors
-    //     console.log(error);
-    // });
   }
 
 
@@ -165,14 +152,7 @@ class App extends Component {
                 </select>
               </dd>
             </div>
-            {/* <div className="text-field">
-              <dt>
-                <label htmlFor="address">Address first line</label>
-              </dt>
-              <dd> 
-                <input id="address" className="address" type="text"></input>
-              </dd>
-            </div>*/}
+
             <div className="legal">
               As we avoid getting or collecting your private information, we will redirect you to your email webpage, generate an email template and autofill all the content according to your selected area. And you need to insert your name and send the email manually.
             </div>
