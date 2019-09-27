@@ -19,7 +19,7 @@ class App extends Component {
   {
     super(props);
     this.state = {
-       listOfEmails: [],
+       listOfEmails: "[Insert TD's email address]",
        listOfNames: "[Insert TD's Name]",
        areaName: "[Insert local area name]",
        aftermsg: "",
@@ -42,7 +42,7 @@ class App extends Component {
     // var url ="http://localhost:3210";
     // var url = "https://d4hk-ireland-td-email.herokuapp.com/";
     var url ="http://ec2-52-50-99-211.eu-west-1.compute.amazonaws.com/";
-    var emailslist = [];
+    var emailslist = "";
     var nameslist = "";
     var body = "";
 
@@ -50,12 +50,12 @@ class App extends Component {
     {
       if (this.list[i]['area'] == this.areas.options[this.areas.selectedIndex].text)
       {
-        emailslist.push(this.list[i]['email']);
+        emailslist += this.list[i]['email']+";\n";
         nameslist += this.list[i]['name'] + ", ";
       }
     }
      this.setState({ listOfEmails: emailslist, listOfNames: nameslist, areaName: this.areas.options[this.areas.selectedIndex].text});
-     body +=  "Dear " + this.state.listOfNames + "%0A%0A";
+     body +=  "Dear " + nameslist + "%0A%0A";
      body += "As my local TD for " + this.areas.options[this.areas.selectedIndex].text + " you will, no doubt, be well aware of the ongoing series of demonstrations in Hong Kong, also known as the Anti-Extradition Law Amendment Bill Movement, China which began with the aim to oppose the introduction of the Fugitive Offenders amendment bill proposed by the Hong Kong government.%0A%0A";
      body += "I wish to draw your attention to the problems with regards to the Irish government having a close business relationship with China currently, which numerous of Irish businesses in the country  in different industries are actually backed by Chinese investments, such as pharma and medical. The number of investment is increasing with the support from IDA Ireland. I am concerned about China’s growing interest in the economy, and the security of scientific intellectual-property,which are also questioned in the US, Australia and other Euorpean countries. I am wondering how Ireland would like to do business deals with a brutal tyranny - China.%0A%0A";
      body += "Also, according to the latest figures of the State’s Immigrant Investor Programme, more than 90 percent of applicants are from China. Earlier this year the European Parliament’s committee on financial crime and tax evasion urged members states to close down the investor immigration schemes and I believe Ireland should review the potential risks of national security, money-laundering and tax-evasion from those Chinese applicants of Immigrant Investor Programme.%0A%0A";
@@ -65,9 +65,12 @@ class App extends Component {
      body += "I would be very interested in hearing from you with regards to your views on this matter and what you might be able to do about it.%0A%0A%0A" +"Yours sincerely,%0A[Insert your name]";
 
      this.timeout = setTimeout(() => {
-            document.location.href = window.location.href;
-            window.location.href = "mailto:" + this.state.listOfEmails + "?subject=Call for review on Ireland-China relations" + 
+            var mailtoStr = "mailto:" + this.state.listOfEmails + "?subject=Call for review on Ireland-China relations" + 
             "&body=" + body;
+            window.open(mailtoStr, '_blank');
+            // document.location.href = window.location.href;
+            // window.location.href = "mailto:" + this.state.listOfEmails + "?subject=Call for review on Ireland-China relations" + 
+            // "&body=" + body;
             // window.location.reload();
             this.setState({aftermsg: "If the browser doesn't redirect to your email web app page (e.g. gmail), please free feel to copy the template from the left hand side (subject, email addresses, content are auto-generated) and send it manually."})
         },1000);
@@ -199,10 +202,9 @@ class App extends Component {
         <div className="w-richtext">
           <h4>Call for review on Ireland-China relations</h4>
           <div className="td-letter">
-             <span className="emails"><b>To:</b> {this.state.listOfEmails.map(email => (
-                 <span>{email};<br/></span>
-               ))}
-              </span><br/>
+             <span className="emails"><b>To:</b> <br/><span>{this.state.listOfEmails}</span>
+             </span><br/>
+          
              <p>Dear {this.state.listOfNames}</p>
              <p>As my local TD for {this.state.areaName} you will, no doubt, be well aware of the ongoing series of demonstrations in Hong Kong, also known as the Anti-Extradition Law Amendment Bill Movement, China which began with the aim to oppose the introduction of the Fugitive Offenders amendment bill proposed by the Hong Kong government.</p>
              <p>I wish to draw your attention to the problems with regards to the Irish government having a close business relationship with China currently, which numerous of Irish businesses in the country  in different industries are actually backed by Chinese investments, such as pharma and medical. The number of investment is increasing with the support from IDA Ireland. I am concerned about China’s growing interest in the economy, and the security of scientific intellectual-property, which are also questioned in the US, Australia and other European countries. I am wondering how Ireland would like to do business deals with a brutal tyranny - China.</p>
