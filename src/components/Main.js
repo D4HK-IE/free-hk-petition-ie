@@ -14,12 +14,12 @@ const Main = () => {
         <form className="w-form">
           <div className="intro-para">
             <p>
-              Hong Kong's fundamental freedoms, rights, rule of law and
+              Hong Kong&apos;s fundamental freedoms, rights, rule of law and
               democracy are under attack. Please help Hong Kong by writing to
               your TD and asking them,
             </p>
             <p>
-              1. To review Ireland's business relationship with China (Does
+              1. To review Ireland&apos;s business relationship with China (Does
               Ireland want to be friends of a dictatorship?)
             </p>
             <p>
@@ -124,7 +124,6 @@ const Main = () => {
               value="Email to your TDs"
               data-wait="Please wait..."
               className="submit w-button"
-              value="Email to your TDs"
             ></input>
           </div>
         </form>
