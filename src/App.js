@@ -216,7 +216,9 @@ class App extends Component {
             <div className="w-form-done"></div>
             <div className="w-form-fail"></div>
             <div className="w-richtext">
-              <h4>Call for review on Ireland-China relations</h4>
+              <h4 className="email-header">
+                Call for review on Ireland-China relations
+              </h4>
               <div className="td-letter">
                 <span className="emails">
                   <b>To:</b> <br />
