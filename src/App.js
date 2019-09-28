@@ -24,7 +24,6 @@ class App extends Component {
   // define states
   constructor(props) {
     super(props);
-
     this.state = {
       listOfEmails: "[Insert TD's email address]",
       listOfNames: "[Insert TD's Name]",
@@ -67,18 +66,13 @@ class App extends Component {
     body +=
       "As my local TD for " +
       this.areas.options[this.areas.selectedIndex].text +
-      " you will, no doubt, be well aware of the ongoing series of demonstrations in Hong Kong, also known as the Anti-Extradition Law Amendment Bill Movement, China which began with the aim to oppose the introduction of the Fugitive Offenders amendment bill proposed by the Hong Kong government.%0A%0A";
+      "you may be aware of the ongoing series of demonstrations in Hong Kong known as the Anti-Extradition Law Amendment Bill Movement, which began with the aim of opposing the introduction a new Extradition Law proposed by the Hong Kong government. During these peaceful protests there has been brutal repression on the part of the Chinese state. This includes brutal beatings and sexual violence being inflicted on protestors by the Hong Kong police as well as the imprisonment of over 1,600 people.%0A%0A";
     body +=
-      "I wish to draw your attention to the problems with regards to the Irish government having a close business relationship with China currently, which numerous of Irish businesses in the country  in different industries are actually backed by Chinese investments, such as pharma and medical. The number of investment is increasing with the support from IDA Ireland. I am concerned about China’s growing interest in the economy, and the security of scientific intellectual-property,which are also questioned in the US, Australia and other Euorpean countries. I am wondering how Ireland would like to do business deals with a brutal tyranny - China.%0A%0A";
-    //body += "Also, according to the latest figures of the State’s Immigrant Investor Programme, more than 90 percent of applicants are from China. Earlier this year the European Parliament’s committee on financial crime and tax evasion urged members states to close down the investor immigration schemes and I believe Ireland should review the potential risks of national security, money-laundering and tax-evasion from those Chinese applicants of Immigrant Investor Programme.%0A%0A";
+      "In light of this I wish to highlight the close business ties between Ireland and China. Numerous Irish businesses in the country in different industries are backed by Chinese investments, such as pharma and medical. This investment is increasing with the support from IDA Ireland. There have also been deals done with Chinese State companies, such as the licence given to the China National Offshore Oil Company to drill off the coast of Kerry. I am deeply concerned about China’s growing interest in the economy and the Irish government’s willingness to do business with the brutal tyranny that is the Chinese State.%0A%0A";
     body +=
-      "On the other hand,  I would like to raise concerns about the influence of Confucius Institute - a Chinese state-backed organisation in UCD. More than 450 Confucius Institutes have been set up by the Chinese government in partnership with universities around the world. While they are sometimes compared to cultural organisations such as the British Council and France’s Alliance Française, the Chinese model is unique in being located only on university or college campuses, that UCD agreed with the Chinese government to jointly operate a Confucius Institute on the Belfield campus in 2006 until at least 2066 for 50 years!%0A%0A";
+      "Moreover, I would like to raise concerns about the influence of Confucius Institute - a Chinese state-backed organisation in UCD. More than 450 Confucius Institutes have been set up by the Chinese government in partnership with universities around the world. While they are sometimes compared to cultural organisations such as the British Council and France’s Alliance Française, the Chinese model is unique in being directly run by the Chinese state and being located only on university or college campuses. UCD agreed with the Chinese government to jointly operate a Confucius Institute on the Belfield campus in 2006 until at least 2066. The college has recently established a course on Chinese studies which it said “offers a wide range of modules” to help students gain an “understanding and knowledge of China”. The modules cover society, culture, politics, law, economy and doing business in China. It is completely inappropriate for UCD to allow a Chinese state entity to oversee teaching about Chinese politics and society. Confucius Institutes are controlled by the Chinese Language Council International which is ultimately overseen by the Chinese Communist Party’s (CCP) Central Propaganda Department. Educational institutions across the United States and Australia have the same concern and appear to be reconsidering the relationship with Confucius Institutes and as of August, 37 public schools have closed down the Confucius Institutes around the world. Why does the Irish government allow a Communist propaganda machine into our public university?%0A%0A";
     body +=
-      "The college has recently established a course on Chinese studies which it said “offers a wide range of modules” to help students gain an “understanding and knowledge of China”. The modules cover society, culture, politics, law, economy and doing business in China. However, it is inappropriate for UCD to allow a Chinese state entity to oversee teaching about Chinese politics and society. Confucius Institutes are controlled by the Chinese Language Council International.which is ultimately overseen by the Chinese Communist Party’s (CCP) Central Propaganda Department. Educational institutions across the United States and Australia have the same concern and appear to be reconsidering the relationship with Confucius Institutes and as of August, 37 public schools have closed down the Confucius Institutes around the world. Yet, why Irish government allows a Communist propaganda machine in our public university?%0A%0A";
-    body +=
-      "I hope you can review the issues for yourself just how serious the problems have become and can, subsequently, lobby some of your fellow members of the Dáil to support a change in the foreign policies regarding Ireland - China relationship.%0A%0A";
-    body +=
-      "I would be very interested in hearing from you with regards to your views on this matter and what you might be able to do about it.%0A%0A%0A" +
+      "I hope you can review these issues for yourself and in light of how serious the problems have become, will take action to force a change in the policies surrounding the Ireland - China relationship. I would be very interested in hearing from you with regards to your views on this matter and what you might be able to do about it..%0A%0A%0A" +
       "Yours sincerely,%0A[Insert your name]%0A";
     body += "Reference: http://d4hk.ie";
     this.timeout = setTimeout(() => {
@@ -98,37 +92,6 @@ class App extends Component {
           "If the browser doesn't redirect to your email web app page (e.g. gmail), please free feel to copy the template from the left hand side (subject, email addresses, content are auto-generated) and send it manually."
       });
     }, 1000);
-
-    // axios.post(url, {area: this.areas.options[this.areas.selectedIndex].text})
-    //   .then((res) => {
-
-    // for (var i = 0; i < res.data.length; i++)
-    // {
-    //   console.log( res.data[i]['name']);
-    //   emailslist.push(res.data[i]['email']);
-    //   // emailslist += res.data[i]['email'] + ";";
-    //   nameslist += res.data[i]['name'] + ", ";
-    // }
-    // this.setState({ listOfEmails: emailslist, listOfNames: nameslist, areaName: this.areas.options[this.areas.selectedIndex].text});
-    // body += "Dear " + this.state.listOfNames + "%0A%0A";
-    // body += "As my local TD for " + this.areas.options[this.areas.selectedIndex].text + " you will, no doubt, be well aware of the ongoing series of demonstrations in Hong Kong, also known as the Anti-Extradition Law Amendment Bill Movement, China which began with the aim to oppose the introduction of the Fugitive Offenders amendment bill proposed by the Hong Kong government.%0A%0A";
-    // body += "I wish to draw your attention to the problems with regards to the Irish government having a close business relationship with China currently, which numerous of Irish businesses in the country  in different industries are actually backed by Chinese investments, such as pharma and medical. The number of investment is increasing with the support from IDA Ireland. I am concerned about China’s growing interest in the economy, and the security of scientific intellectual-property,which are also questioned in the US, Australia and other Euorpean countries. I am wondering how Ireland would like to do business deals with a brutal tyranny - China.%0A%0A";
-    // body += "Also, according to the latest figures of the State’s Immigrant Investor Programme, more than 90 percent of applicants are from China. Earlier this year the European Parliament’s committee on financial crime and tax evasion urged members states to close down the investor immigration schemes and I believe Ireland should review the potential risks of national security, money-laundering and tax-evasion from those Chinese applicants of Immigrant Investor Programme.%0A%0A";
-    // body += "On the other hand,  I would like to raise concerns about the influence of Confucius Institute - a Chinese state-backed organisation in UCD. More than 450 Confucius Institutes have been set up by the Chinese government in partnership with universities around the world. While they are sometimes compared to cultural organisations such as the British Council and France’s Alliance Française, the Chinese model is unique in being located only on university or college campuses, that UCD agreed with the Chinese government to jointly operate a Confucius Institute on the Belfield campus in 2006 until at least 2066 for 50 years!%0A%0A";
-    // body += "The college has recently established a course on Chinese studies which it said “offers a wide range of modules” to help students gain an “understanding and knowledge of China”. The modules cover society, culture, politics, law, economy and doing business in China. However, it is inappropriate for UCD to allow a Chinese state entity to oversee teaching about Chinese politics and society. Confucius Institutes are controlled by the Chinese Language Council International.which is ultimately overseen by the Chinese Communist Party’s (CCP) Central Propaganda Department. Educational institutions across the United States and Australia have the same concern and appear to be reconsidering the relationship with Confucius Institutes and as of August, 37 public schools have closed down the Confucius Institutes around the world. Yet, why Irish government allows a Communist propaganda machine in our public university?%0A%0A";
-    // body += "I hope you can review the issues for yourself just how serious the problems have become and can, subsequently, lobby some of your fellow members of the Dáil to support a change in the foreign policies regarding Ireland - China relationship.%0A%0A";
-    // body += "I would be very interested in hearing from you with regards to your views on this matter and what you might be able to do about it.%0A%0A%0A" +"Yours sincerely,%0A[Insert your name]";
-    // // console.log(this.list[1]['email']);
-    // }).catch((error) => {
-    //   console.log('error: ' + error);
-    // })
-    //     this.timeout = setTimeout(() => {
-    //         document.location.href = window.location.href;
-    //         window.location.href = "mailto:" + this.state.listOfEmails + "?subject=Call for review on Ireland-China relations" +
-    //         "&body=" + body;
-    //         // window.location.reload();
-    //         this.setState({aftermsg: "If the browser doesn't redirect to your email web app page (e.g. gmail), please free feel to copy the template from the left hand side (subject, email addresses, content are auto-generated) and send it manually."})
-    //     },1000);
   }
 
   render() {
@@ -263,68 +226,65 @@ class App extends Component {
 
                 <p>Dear {this.state.listOfNames}</p>
                 <p>
-                  As my local TD for {this.state.areaName} you will, no doubt,
-                  be well aware of the ongoing series of demonstrations in Hong
-                  Kong, also known as the Anti-Extradition Law Amendment Bill
-                  Movement, China which began with the aim to oppose the
-                  introduction of the Fugitive Offenders amendment bill proposed
-                  by the Hong Kong government.
+                  As my local TD for {this.state.areaName} you may be aware of
+                  the ongoing series of demonstrations in Hong Kong known as the
+                  Anti-Extradition Law Amendment Bill Movement, which began with
+                  the aim of opposing the introduction a new Extradition Law
+                  proposed by the Hong Kong government. During these peaceful
+                  protests there has been brutal repression on the part of the
+                  Chinese state. This includes brutal beatings and sexual
+                  violence being inflicted on protestors by the Hong Kong police
+                  as well as the imprisonment of over 1,600 people.{" "}
                 </p>
                 <p>
-                  I wish to draw your attention to the problems with regards to
-                  the Irish government having a close business relationship with
-                  China currently, which numerous of Irish businesses in the
-                  country in different industries are actually backed by Chinese
-                  investments, such as pharma and medical. The number of
-                  investment is increasing with the support from IDA Ireland. I
-                  am concerned about China’s growing interest in the economy,
-                  and the security of scientific intellectual-property, which
-                  are also questioned in the US, Australia and other European
-                  countries. I am wondering how Ireland would like to do
-                  business deals with a brutal tyranny - China.
-                </p>
-                {/*  <p>Also, according to the latest figures of the State’s Immigrant Investor Programme, more than 90 percent of applicants are from China. Earlier this year the European Parliament’s committee on financial crime and tax evasion urged members states to close down the investor immigration schemes and I believe Ireland should review the potential risks of national security, money-laundering and tax-evasion from those Chinese applicants of Immigrant Investor Programme. </p> */}
-                <p>
-                  On the other hand, I would like to raise concerns about the
-                  influence of Confucius Institute - a Chinese state-backed
-                  organisation in UCD. More than 450 Confucius Institutes have
-                  been set up by the Chinese government in partnership with
-                  universities around the world. While they are sometimes
-                  compared to cultural organisations such as the British Council
-                  and France’s Alliance Française, the Chinese model is unique
-                  in being located only on university or college campuses, that
-                  UCD agreed with the Chinese government to jointly operate a
-                  Confucius Institute on the Belfield campus in 2006 until at
-                  least 2066 for 50 years!
+                  In light of this I wish to highlight the close business ties
+                  between Ireland and China. Numerous Irish businesses in the
+                  country in different industries are backed by Chinese
+                  investments, such as pharma and medical. This investment is
+                  increasing with the support from IDA Ireland. There have also
+                  been deals done with Chinese State companies, such as the
+                  licence given to the China National Offshore Oil Company to
+                  drill off the coast of Kerry. I am deeply concerned about
+                  China’s growing interest in the economy and the Irish
+                  government’s willingness to do business with the brutal
+                  tyranny that is the Chinese State.
                 </p>
                 <p>
-                  The college has recently established a course on Chinese
-                  studies which it said “offers a wide range of modules” to help
-                  students gain an “understanding and knowledge of China”. The
-                  modules cover society, culture, politics, law, economy and
-                  doing business in China. However, it is inappropriate for UCD
-                  to allow a Chinese state entity to oversee teaching about
-                  Chinese politics and society. Confucius Institutes are
-                  controlled by the Chinese Language Council International.which
-                  is ultimately overseen by the Chinese Communist Party’s (CCP)
-                  Central Propaganda Department. Educational institutions across
-                  the United States and Australia have the same concern and
-                  appear to be reconsidering the relationship with Confucius
-                  Institutes and as of August, 37 public schools have closed
-                  down the Confucius Institutes around the world. Yet, why Irish
-                  government allows a Communist propaganda machine in our public
-                  university?
+                  Moreover, I would like to raise concerns about the influence
+                  of Confucius Institute - a Chinese state-backed organisation
+                  in UCD. More than 450 Confucius Institutes have been set up by
+                  the Chinese government in partnership with universities around
+                  the world. While they are sometimes compared to cultural
+                  organisations such as the British Council and France’s
+                  Alliance Française, the Chinese model is unique in being
+                  directly run by the Chinese state and being located only on
+                  university or college campuses. UCD agreed with the Chinese
+                  government to jointly operate a Confucius Institute on the
+                  Belfield campus in 2006 until at least 2066. The college has
+                  recently established a course on Chinese studies which it said
+                  “offers a wide range of modules” to help students gain an
+                  “understanding and knowledge of China”. The modules cover
+                  society, culture, politics, law, economy and doing business in
+                  China. It is completely inappropriate for UCD to allow a
+                  Chinese state entity to oversee teaching about Chinese
+                  politics and society. Confucius Institutes are controlled by
+                  the Chinese Language Council International which is ultimately
+                  overseen by the Chinese Communist Party’s (CCP) Central
+                  Propaganda Department. Educational institutions across the
+                  United States and Australia have the same concern and appear
+                  to be reconsidering the relationship with Confucius Institutes
+                  and as of August, 37 public schools have closed down the
+                  Confucius Institutes around the world. Why does the Irish
+                  government allow a Communist propaganda machine into our
+                  public university?
                 </p>
                 <p>
-                  I hope you can review the issues for yourself just how serious
-                  the problems have become and can, subsequently, lobby some of
-                  your fellow members of the Dáil to support a change in the
-                  foreign policies regarding Ireland - China relationship.
-                </p>
-                <p>
-                  I would be very interested in hearing from you with regards to
-                  your views on this matter and what you might be able to do
-                  about it.
+                  I hope you can review these issues for yourself and in light
+                  of how serious the problems have become, will take action to
+                  force a change in the policies surrounding the Ireland - China
+                  relationship. I would be very interested in hearing from you
+                  with regards to your views on this matter and what you might
+                  be able to do about it.
                 </p>
                 <br />
                 <p>
