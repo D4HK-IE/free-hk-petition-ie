@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import PropTypes from "prop-types";
 // import axios from "axios";
 // import {BrowserRouter as Router, Link, Route} from 'react-router-dom';
 import window from "global";
@@ -16,7 +17,7 @@ import { TD_LIST } from "./constants/td_list";
 class App extends Component {
   static get propTypes() {
     return {
-      email: React.Proptypes.string
+      email: PropTypes.string
     };
   }
 
