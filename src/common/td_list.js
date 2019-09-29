@@ -1,3 +1,13 @@
+export function areaList(tds) {
+  const s = new Set();
+  for (const td of tds) {
+    s.add(td.area);
+  }
+  const sArr = [...s];
+  sArr.sort();
+  return sArr;
+}
+
 export const TD_LIST = [
   {
     area: "Carlow-Kilkenny",

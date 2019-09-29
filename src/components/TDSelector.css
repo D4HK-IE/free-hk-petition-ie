@@ -1,0 +1,9 @@
+.td-selector {
+  background-color: #FFF;
+  cursor: pointer;
+  padding: 4px 8px;
+}
+
+.td-selector option {
+  background-color: #FFF;
+}

@@ -7,20 +7,6 @@ body {
   line-height: 30px;
 }
 
-div {
-  display:block;
-}
-
-.email-header {
-  font-size: 30px;
-  line-height: 30px;
-  font-weight: 800;
-}
-
-.emails {
-  font-size: 12px;
-}
-
 .main-container {
   display:block;
   max-width: 1200px;
@@ -198,7 +184,7 @@ option {
   line-height: 18px;
 }
 
-input.submit {
+a.submit {
   width:200px;
   display: block;
   /*   position: relative;*/
