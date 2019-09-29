@@ -1,19 +1,19 @@
-import React, { Component } from "react";
-import PropTypes from "prop-types";
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 // import axios from "axios";
 // import {BrowserRouter as Router, Link, Route} from 'react-router-dom';
 // import logo from './logo.svg';
-import "./App.css";
-import "./static/css/webflow.css";
+import './App.css';
+import './static/css/webflow.css';
 
-import HeaderTitle from "./components/Header"; //Functional Component
+import HeaderTitle from './components/Header'; //Functional Component
 // import HeaderBar from './components/HeaderClass' //Class Component
-import Hero from "./components/Hero";
+import Hero from './components/Hero';
 // import Main from "./components/Main";
 // import Email from "./components/Email";
-import TDSelector from "./components/TDSelector";
-import PetitionEmail from "./components/PetitionEmail";
-import { getMailToLink } from "./common/email_util";
+import TDSelector from './components/TDSelector';
+import PetitionEmail from './components/PetitionEmail';
+import { getMailToLink } from './common/email_util';
 
 class App extends Component {
   static get propTypes() {
@@ -29,8 +29,8 @@ class App extends Component {
       tds: [],
       listOfEmails: "[Insert TD's email address]",
       listOfNames: "[Insert TD's Name]",
-      areaName: "[Insert local area name]",
-      aftermsg: ""
+      areaName: '[Insert local area name]',
+      aftermsg: ''
     };
   }
 
@@ -87,7 +87,7 @@ class App extends Component {
                 <div className="text-field">
                   <dt>
                     <label htmlFor="area">
-                      Select your area{" "}
+                      Select your area{' '}
                       <a
                         href="https://www.whoismytd.com/"
                         alt="Find out your area"

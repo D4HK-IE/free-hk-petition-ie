@@ -1,5 +1,5 @@
-import React from "react";
-import "./Hero.css";
+import React from 'react';
+import './Hero.css';
 
 // function Header() {
 // 	return <h1>Stand with HK, Fight for Democracy</h1>;
@@ -34,7 +34,7 @@ const Hero = () => {
           rel="noopener noreferrer"
           className="fa fa-facebook"
         >
-          {" "}
+          {' '}
         </a>
         &nbsp;&nbsp;
         <a
@@ -43,8 +43,8 @@ const Hero = () => {
           rel="noopener noreferrer"
           className="fa fa-twitter"
         >
-          {" "}
-        </a>{" "}
+          {' '}
+        </a>{' '}
         &nbsp;
         <a
           href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A//d4hk-ie.github.io/free-hk-petition-ie/&title=&summary=&source="
@@ -52,7 +52,7 @@ const Hero = () => {
           rel="noopener noreferrer"
           className="fa fa-linkedin"
         >
-          {" "}
+          {' '}
         </a>
       </div>
 

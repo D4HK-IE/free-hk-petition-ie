@@ -1,5 +1,5 @@
-import React from "react";
-import "./Main.css";
+import React from 'react';
+import './Main.css';
 
 {
   /* NOT IN USE */
@@ -49,7 +49,7 @@ const Main = () => {
             <div className="text-field">
               <dt>
                 <label htmlFor="area">
-                  Select your area{" "}
+                  Select your area{' '}
                   <a href="https://www.whoismytd.com/" alt="Find out your area">
                     (not sure which area?)
                   </a>
@@ -135,7 +135,7 @@ const Main = () => {
             <p>
               I am writing to you, my local MP, to call upon you to ensure that
               Britain upholds its obligations under the terms of the 1984
-              Sino-British Joint Declaration.{" "}
+              Sino-British Joint Declaration.{' '}
             </p>
             <p>
               This legally-binding treaty guaranteed that, for 50 years after
@@ -143,28 +143,28 @@ const Main = () => {
               ensured by law. In particular, the Declaration guaranteed that
               Hongkongers would enjoy fundamental freedoms, including freedom of
               speech, freedom of the press and freedom of assembly, among
-              others.{" "}
+              others.{' '}
             </p>
             <p>
               China has breached the terms of this Declaration on many
               occasions, eroding the executive, legislative and judicial
               institutions that are supposed to safeguard Hongkongers’ civil and
-              political rights and freedoms.{" "}
+              political rights and freedoms.{' '}
             </p>
             <p>
               The latest breach comes in the form of the Extradition Bill, which
               would allow dissidents in Hong Kong to be sent to mainland China
               to face trial. The Bill provoked massive and ongoing protests with
-              nearly two million people taking to the streets.{" "}
+              nearly two million people taking to the streets.{' '}
             </p>
             <p>
               In spite of her declaration that “the Bill is dead”, Chief
-              Executive Carrie Lam has not formally withdrawn it.{" "}
+              Executive Carrie Lam has not formally withdrawn it.{' '}
             </p>
             <p>
               Hong Kong’s fundamental freedoms are under attack. Police
               brutality against protesters and journalists has escalated,
-              shielded by a government that is not accountable to the people.{" "}
+              shielded by a government that is not accountable to the people.{' '}
             </p>
             <p>
               Britain has a unique legal, historical and moral responsibility to
@@ -174,17 +174,17 @@ const Main = () => {
               human rights and freedoms. We are also calling upon Britain to
               include provisions on human rights, civil liberties and
               democratisation in any post-Brexit agreements with Hong Kong and
-              China. Britain must stand with Hong Kong.{" "}
+              China. Britain must stand with Hong Kong.{' '}
             </p>
             <p>
               I urge you to write to the Foreign Secretary and ask them what
               concrete steps they will take to uphold the Declaration and take
               steps to put in place sanctions against persons that are involved
-              in undermining freedom in Hong Kong.{" "}
+              in undermining freedom in Hong Kong.{' '}
             </p>
             <p>
               Please send a strong message to our new Prime Minister that
-              Britain must stand by its promises and defend Hong Kong’s freedom.{" "}
+              Britain must stand by its promises and defend Hong Kong’s freedom.{' '}
             </p>
           </div>
         </div>

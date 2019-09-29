@@ -1,8 +1,8 @@
-import React from "react";
-import PropTypes from "prop-types";
+import React from 'react';
+import PropTypes from 'prop-types';
 
-import "./TDSelector.css";
-import { TD_LIST, areaList } from "../common/td_list";
+import './TDSelector.css';
+import { TD_LIST, areaList } from '../common/td_list';
 
 const AREA = areaList(TD_LIST);
 
