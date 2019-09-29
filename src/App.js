@@ -27,9 +27,6 @@ class App extends Component {
     super(props);
     this.state = {
       tds: [],
-      listOfEmails: "[Insert TD's email address]",
-      listOfNames: "[Insert TD's Name]",
-      areaName: '[Insert local area name]',
       aftermsg: ''
     };
   }
