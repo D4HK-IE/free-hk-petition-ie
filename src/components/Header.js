@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import './Header.css';
 
 // function Header() {
@@ -18,21 +18,27 @@ import './Header.css';
 // }
 
 const HeaderTitle = () => {
-	return (
-		<div className="navbar w-nav">
-			<div className="container">
-				<div className="nav-menu w-clearfix">
-					 <a href="https://www.facebook.com/democracy4hkinireland/" className="w-inline-block">
-	                  <img src="logo.jpeg" alt="democracy for Hong Kong in Ireland" className="app-logo"/>
-	                 </a>
-	                 <div className="nav-title"><h2 className="navtitle">Stand with HK, Fight for Democracy</h2></div>
-				</div>
-			</div>
-		</div>
-	)
-}
-
-	
-
+  return (
+    <div className="navbar w-nav">
+      <div className="container">
+        <div className="nav-menu w-clearfix">
+          <a
+            href="https://www.facebook.com/democracy4hkinireland/"
+            className="w-inline-block"
+          >
+            <img
+              src="logo.jpeg"
+              alt="democracy for Hong Kong in Ireland"
+              className="app-logo"
+            />
+          </a>
+          <div className="nav-title">
+            <h2 className="navtitle">Stand with HK, Fight for Democracy</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
 
 export default HeaderTitle;

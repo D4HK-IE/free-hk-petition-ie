@@ -1,0 +1,6 @@
+# Ignore build files
+build/*
+
+# Ignore public files
+public/*
+
