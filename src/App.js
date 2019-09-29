@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import ReactGA from 'react-ga';
 // import axios from "axios";
 // import {BrowserRouter as Router, Link, Route} from 'react-router-dom';
 // import logo from './logo.svg';
@@ -36,12 +37,14 @@ class App extends Component {
   }
 
   handleMailtoLink() {
-    setTimeout(() => {
-      this.setState({
-        aftermsg:
-          "If the browser doesn't redirect to your email web app page (e.g. gmail), please free feel to copy the template from the left hand side (subject, email addresses, content are auto-generated) and send it manually."
-      });
-    }, 1000);
+    ReactGA.event({
+      category: 'Petition',
+      action: 'Open email link'
+    });
+    this.setState({
+      aftermsg:
+        "If the browser doesn't redirect to your email web app page (e.g. gmail), please free feel to copy the template from the left hand side (subject, email addresses, content are auto-generated) and send it manually."
+    });
   }
 
   render() {
