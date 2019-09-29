@@ -1,8 +1,5 @@
 export function areaList(tds) {
-  const s = new Set();
-  for (const td of tds) {
-    s.add(td.area);
-  }
+  const s = new Set(tds.map(t => t.area));
   const sArr = [...s];
   sArr.sort();
   return sArr;

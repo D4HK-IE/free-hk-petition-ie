@@ -26,8 +26,12 @@ class TDSelector extends React.Component {
     this.props.onSelectTD(TD_LIST.filter(td => td.area === area));
   };
 
-  getOption(a) {
-    return <option value={a}>{a}</option>;
+  getOption(a, i) {
+    return (
+      <option value={a} key={i}>
+        {a}
+      </option>
+    );
   }
 
   render() {
@@ -39,7 +43,7 @@ class TDSelector extends React.Component {
         value={this.state.areaSelection}
       >
         <option value="">-----</option>
-        {AREA.map(a => this.getOption(a))}
+        {AREA.map((a, i) => this.getOption(a, i))}
       </select>
     );
   }

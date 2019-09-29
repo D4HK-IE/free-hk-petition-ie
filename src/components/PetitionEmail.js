@@ -18,7 +18,7 @@ export default class PetitionEmail extends React.Component {
 
   toHyperLink(href) {
     return (
-      <div className="link">
+      <div className="link" key={href}>
         <a href={href} target="_blank" rel="noopener noreferrer">
           {href}
         </a>
