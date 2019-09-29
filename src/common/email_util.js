@@ -20,7 +20,7 @@ export function getEmailContent(tds) {
 }
 
 export function getMailToLink(tds) {
-  const address = getAddresses(tds).join(';\n');
+  const address = getAddresses(tds).join(',');
   const body = encodeURIComponent(
     `${getEmailContent(tds)}\n\nReference: https://d4hk.ie`
   );
