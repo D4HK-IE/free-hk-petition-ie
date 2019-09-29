@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c41ecaea413bfdabdb2581a94fe422b3",
+    "revision": "959a936fa4c43389613679b72201f427",
     "url": "/free-hk-petition-ie/index.html"
   },
   {
-    "revision": "034d4c028f102b767e5b",
-    "url": "/free-hk-petition-ie/static/css/main.2f35b1c5.chunk.css"
+    "revision": "0e102a613f15055905ec",
+    "url": "/free-hk-petition-ie/static/css/main.941c1bf0.chunk.css"
   },
   {
-    "revision": "631b850d4489bccb5f98",
-    "url": "/free-hk-petition-ie/static/js/2.4aa779da.chunk.js"
+    "revision": "87f81edf4c2df5df7945",
+    "url": "/free-hk-petition-ie/static/js/2.3bab4744.chunk.js"
   },
   {
-    "revision": "034d4c028f102b767e5b",
-    "url": "/free-hk-petition-ie/static/js/main.ce85e586.chunk.js"
+    "revision": "0e102a613f15055905ec",
+    "url": "/free-hk-petition-ie/static/js/main.ce59d7b1.chunk.js"
   },
   {
     "revision": "e3e1e76d4635c8322e7f",
