@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import './PetitionEmail.css';
+import { EMAIL_SUBJECT } from '../common/email';
 import { getEmailContent, getAddresses } from '../common/email_util';
 
 const REFS = [
@@ -30,9 +31,7 @@ export default class PetitionEmail extends React.Component {
     const tds = this.props.tds || [];
     return (
       <div>
-        <div className="email-header">
-          Call for review on Ireland-China relations
-        </div>
+        <div className="email-header">{EMAIL_SUBJECT}</div>
         <div className="email">
           <div className="address">
             <b>To: </b>

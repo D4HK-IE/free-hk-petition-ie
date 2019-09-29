@@ -1,4 +1,5 @@
-const EMAIL_TMPL = `Dear %%TD_NAMES%%,
+export const EMAIL_SUBJECT = 'Call for review on Ireland-China relations';
+export const EMAIL_TMPL = `Dear %%TD_NAMES%%,
 
 As my local TD for %%AREA%% you may be aware of the ongoing series of demonstrations in Hong Kong known as the Anti-Extradition Law Amendment Bill Movement, which began with the aim of opposing the introduction a new Extradition Law proposed by the Hong Kong government. During these peaceful protests there has been brutal repression on the part of the Chinese state. This includes brutal beatings and sexual violence being inflicted on protestors by the Hong Kong police as well as the imprisonment of over 1,600 people.
 
@@ -11,5 +12,3 @@ I hope you can review these issues for yourself and in light of how serious the 
 
 Yours sincerely,
 >>>[Insert your name]<<<`;
-
-export default EMAIL_TMPL;

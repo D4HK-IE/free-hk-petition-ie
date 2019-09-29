@@ -1,8 +1,7 @@
-import EMAIL_TMPL from './email';
+import { EMAIL_SUBJECT, EMAIL_TMPL } from './email';
 
 const TD_NAME_PLACEHOLDER = "[Insert TD's Name]";
 const AREA_PLACEHOLDER = '[Insert local area name]';
-const EMAIL_SUBJECT = 'Call for review on Ireland-China relateions';
 
 export function getAddresses(tds) {
   return tds.map(td => td.email);
