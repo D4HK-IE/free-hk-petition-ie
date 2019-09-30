@@ -49,11 +49,6 @@ class App extends Component {
     const { tds } = this.state;
     return (
       <div className="App">
-        <MetaTags>
-          <meta name="description" content="Email to your TDs, call for review on Ireland-China relations" />
-          <meta property="og:title" content="Stand with Hong Kong, Fight for Democracy, Be their voice in Dáil."/>
-          <meta property="og:image" content="https://d4hk-ie.github.io/free-hk-petition-ie/logo.jpeg"/>
-        </MetaTags>
         <HeaderTitle />
         <Hero />
         <div className="main-container ">
