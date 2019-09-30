@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "0f0d2d8298cc10b0aa4ba0068594badc",
+    "revision": "44558e73fc64e4ba255827b180fafebd",
     "url": "/free-hk-petition-ie/index.html"
   },
   {
