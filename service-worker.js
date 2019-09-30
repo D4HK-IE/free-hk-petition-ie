@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/free-hk-petition-ie/precache-manifest.5ccbbdcc9540eaa608f261ec1a345cb1.js"
+  "/free-hk-petition-ie/precache-manifest.8fea0aa92698f99b3a74e9e1f54a4154.js"
 );
 
 self.addEventListener('message', (event) => {
