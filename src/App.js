@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import ReactGA from 'react-ga';
+import MetaTags from 'react-meta-tags';
 // import axios from "axios";
 // import {BrowserRouter as Router, Link, Route} from 'react-router-dom';
 // import logo from './logo.svg';
@@ -37,20 +37,23 @@ class App extends Component {
   }
 
   handleMailtoLink() {
-    ReactGA.event({
-      category: 'Petition',
-      action: 'Open email link'
-    });
-    this.setState({
-      aftermsg:
-        "If the browser doesn't redirect to your email web app page (e.g. gmail), please free feel to copy the template from the left hand side (subject, email addresses, content are auto-generated) and send it manually."
-    });
+    setTimeout(() => {
+      this.setState({
+        aftermsg:
+          "If the browser doesn't redirect to your email web app page (e.g. gmail), please free feel to copy the template from the left hand side (subject, email addresses, content are auto-generated) and send it manually."
+      });
+    }, 1000);
   }
 
   render() {
     const { tds } = this.state;
     return (
       <div className="App">
+        <MetaTags>
+          <meta name="description" content="Email to your TDs, call for review on Ireland-China relations" />
+          <meta property="og:title" content="Stand with Hong Kong, Fight for Democracy, Be their voice in Dáil."/>
+          <meta property="og:image" content="https://d4hk-ie.github.io/free-hk-petition-ie/logo.jpeg"/>
+        </MetaTags>
         <HeaderTitle />
         <Hero />
         <div className="main-container ">
