@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import MetaTags from 'react-meta-tags';
 // import axios from "axios";
 // import {BrowserRouter as Router, Link, Route} from 'react-router-dom';
 // import logo from './logo.svg';
