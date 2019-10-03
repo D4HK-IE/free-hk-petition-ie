@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/free-hk-petition-ie/static/css/main.88035fb1.chunk.css",
+    "main.css": "/free-hk-petition-ie/static/css/main.9942c994.chunk.css",
     "main.js": "/free-hk-petition-ie/static/js/main.c56897cb.chunk.js",
     "main.js.map": "/free-hk-petition-ie/static/js/main.c56897cb.chunk.js.map",
     "runtime~main.js": "/free-hk-petition-ie/static/js/runtime~main.eb0e1e01.js",
@@ -8,9 +8,9 @@
     "static/js/2.9d2f5fd7.chunk.js": "/free-hk-petition-ie/static/js/2.9d2f5fd7.chunk.js",
     "static/js/2.9d2f5fd7.chunk.js.map": "/free-hk-petition-ie/static/js/2.9d2f5fd7.chunk.js.map",
     "index.html": "/free-hk-petition-ie/index.html",
-    "precache-manifest.cd0cac6e8b235de6e491e8e1591f2e9f.js": "/free-hk-petition-ie/precache-manifest.cd0cac6e8b235de6e491e8e1591f2e9f.js",
+    "precache-manifest.3c36a4e9710c924b4c1927d6c4f0bbbb.js": "/free-hk-petition-ie/precache-manifest.3c36a4e9710c924b4c1927d6c4f0bbbb.js",
     "service-worker.js": "/free-hk-petition-ie/service-worker.js",
-    "static/css/main.88035fb1.chunk.css.map": "/free-hk-petition-ie/static/css/main.88035fb1.chunk.css.map",
+    "static/css/main.9942c994.chunk.css.map": "/free-hk-petition-ie/static/css/main.9942c994.chunk.css.map",
     "static/media/Hero.css": "/free-hk-petition-ie/static/media/swhk.bg-cropped.30838583.jpeg"
   }
 }
