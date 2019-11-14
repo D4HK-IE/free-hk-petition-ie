@@ -1,8 +1,8 @@
-import React from 'react';
-import './Hero.css';
+import React from "react";
+import "./Hero.css";
 
 // function Header() {
-// 	return <h1>Stand with HK, Fight for Democracy</h1>;
+//   return <h1>Stand with HK, Fight for Democracy</h1>;
 // }
 
 //ES6 class
@@ -10,11 +10,11 @@ import './Hero.css';
 
 //JSX
 // const HeaderTitle = () => {
-// 	return React.createElement(
-// 		'div',
-// 		{className: 'navtitle'},
-// 		React.createElement('h1', null, 'Stand with HK, Fight for Democracy')
-// 	)
+//   return React.createElement(
+//     'div',
+//     {className: 'navtitle'},
+//     React.createElement('h1', null, 'Stand with HK, Fight for Democracy')
+//   )
 // }
 
 const Hero = () => {
@@ -34,7 +34,7 @@ const Hero = () => {
           rel="noopener noreferrer"
           className="fa fa-facebook"
         >
-          {' '}
+          {" "}
         </a>
         &nbsp;&nbsp;
         <a
@@ -43,8 +43,8 @@ const Hero = () => {
           rel="noopener noreferrer"
           className="fa fa-twitter"
         >
-          {' '}
-        </a>{' '}
+          {" "}
+        </a>{" "}
         &nbsp;
         <a
           href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A//d4hk-ie.github.io/free-hk-petition-ie/&title=&summary=&source="
@@ -52,7 +52,7 @@ const Hero = () => {
           rel="noopener noreferrer"
           className="fa fa-linkedin"
         >
-          {' '}
+          {" "}
         </a>
       </div>
 

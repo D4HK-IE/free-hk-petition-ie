@@ -1,19 +1,20 @@
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
+import React, { Component } from "react";
+import PropTypes from "prop-types";
 // import axios from "axios";
-// import {BrowserRouter as Router, Link, Route} from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 // import logo from './logo.svg';
-import './App.css';
-import './static/css/webflow.css';
+import "./App.css";
+import "./static/css/webflow.css";
 
-import HeaderTitle from './components/Header'; //Functional Component
+import HeaderTitle from "./components/Header"; //Functional Component
 // import HeaderBar from './components/HeaderClass' //Class Component
-import Hero from './components/Hero';
-// import Main from "./components/Main";
+import Hero from "./components/Hero";
+import Main from "./components/Main";
 // import Email from "./components/Email";
-import TDSelector from './components/TDSelector';
-import PetitionEmail from './components/PetitionEmail';
-import { getMailToLink } from './common/email_util';
+import TDSelector from "./components/TDSelector";
+import PetitionEmail from "./components/PetitionEmail";
+import { getMailToLink } from "./common/email_util";
+import GSList from "./components/GSList";
 
 class App extends Component {
   static get propTypes() {
@@ -27,7 +28,7 @@ class App extends Component {
     super(props);
     this.state = {
       tds: [],
-      aftermsg: ''
+      aftermsg: ""
     };
   }
 
@@ -48,84 +49,22 @@ class App extends Component {
     const { tds } = this.state;
     return (
       <div className="App">
-        <HeaderTitle />
-        <Hero />
-        <div className="main-container ">
-          <span className="writeline">
-            <h2>Email to your TD</h2>
-          </span>
-          <div className="rectangle">
-            <form className="w-form" onSubmit={this.handleSubmit}>
-              <div className="intro-para">
-                <p>
-                  Hong Kong&apos;s fundamental freedoms, rights, rule of law and
-                  democracy are under attack. Please help by writing to your TD
-                  and asking them,
-                </p>
-                <p>
-                  1. To review Ireland&apos;s business relationship with China
-                  (Does Ireland want to be friends of a dictatorship?)
-                </p>
-                {/*<p>2. To review investment immigration programme (Do we let whoever has money to jump the immigration queue with no question asked?)</p>*/}
-                <p>
-                  2. To enquire the role of Confucius Institute at UCD? (Why do
-                  we allow a communist propaganda machine in our university?)
-                </p>
-              </div>
-              <div className="formblock">
-                {/*<div className="text-field">
-              <dt>
-                <label htmlFor="name">Your full name</label>
-              </dt>
-              <dd> 
-                <input id="name" className="name" name="name" required type="text"></input>
-              </dd>
-            </div>*/}
-                <div className="text-field">
-                  <dt>
-                    <label htmlFor="area">
-                      Select your area{' '}
-                      <a
-                        href="https://www.whoismytd.com/"
-                        alt="Find out your area"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        (not sure which area?)
-                      </a>
-                    </label>
-                  </dt>
-                  <dd>
-                    <TDSelector onSelectTD={tds => this.handleSelectTD(tds)} />
-                  </dd>
+        <Router basename={process.env.PUBLIC_URL}>
+          <HeaderTitle />
+          <Switch>
+            <Route
+              exact
+              path="/"
+              render={props => (
+                <div>
+                  <Hero />
+                  <Main />
                 </div>
-
-                <div className="legal">
-                  As we avoid getting or collecting your private information, we
-                  will redirect you to your email webpage, generate an email
-                  template and autofill all the content according to your
-                  selected area. And you need to insert your name and send the
-                  email manually.
-                </div>
-                <a
-                  className="submit w-button"
-                  href={getMailToLink(tds)}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  disabled={tds.length === 0}
-                  onClick={e => this.handleMailtoLink(e)}
-                >
-                  Email to your TDs
-                </a>
-                <br />
-                <div className="legal">{this.state.aftermsg}</div>
-              </div>
-            </form>
-            <div className="w-form-done"></div>
-            <div className="w-form-fail"></div>
-            <PetitionEmail className="w-richtext" tds={tds}></PetitionEmail>
-          </div>
-        </div>
+              )}
+            />
+            <Route exact path="/list" component={GSList} />
+          </Switch>
+        </Router>
       </div>
     );
   }

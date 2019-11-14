@@ -1,25 +1,11 @@
-import React from 'react';
-import './Header.css';
-
-// function Header() {
-// 	return <h1>Stand with HK, Fight for Democracy</h1>;
-// }
-
-//ES6 class
-// const HeaderTitle = () => <h1>Stand with HK, Fight for Democracy</h1>
-
-//JSX
-// const HeaderTitle = () => {
-// 	return React.createElement(
-// 		'div',
-// 		{className: 'navtitle'},
-// 		React.createElement('h1', null, 'Stand with HK, Fight for Democracy')
-// 	)
-// }
+import React from "react";
+import "./Header.css";
+import { Link } from "react-router-dom";
+import { Navbar, Nav, NavItem, NavDropdown, MenuItem } from "react-bootstrap";
 
 const HeaderTitle = () => {
   return (
-    <div className="navbar w-nav">
+    <div className="mynavbar w-nav">
       <div className="container">
         <div className="nav-menu w-clearfix">
           <a
@@ -34,6 +20,15 @@ const HeaderTitle = () => {
           </a>
           <div className="nav-title">
             <h2 className="navtitle">Stand with HK, Fight for Democracy</h2>
+            <div className="navbar">
+              <Link className="navitem" to="/">
+                Home - Email to TDs
+              </Link>
+              &nbsp;&nbsp;
+              <Link className="navitem" to="/list">
+                Worldwide Rallies List
+              </Link>
+            </div>
           </div>
         </div>
       </div>

@@ -1,7 +1,37 @@
-.navbar {
+.mynavbar {
 	position:fixed;
 	width:120%;
 	background-color: #ffd01e;
+}
+
+.navbar {
+	margin-top: -10px;
+	margin-left: 10px;
+	background-color: #ffd01e;
+}
+
+.navitem {
+	border: 3px solid #303030;
+	border-radius: 10px;
+	background-color: #333333;
+	padding:3px;
+	padding-left:15px;
+	padding-right:15px;
+	color:#fff;
+}
+
+.navitem a.active {
+  background-color: #ffd01e;
+  color: white;
+}
+
+.navitem a.visited a.hover{
+	background-color: #8f8f8f;
+	color:white;
+}
+
+.navitem {
+	display: inline;
 }
 
 .container 
@@ -32,7 +62,8 @@
 
 .navtitle {
 	font-weight: 800;
-	padding:10px
+	padding:10px;
+	margin-top:5px;
 }
 
 
@@ -46,5 +77,6 @@
 	font-weight: 800;
 	font-size: 18px;
 	padding:10px;
+	margin-top: 5px;
 }
 }
