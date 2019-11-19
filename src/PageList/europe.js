@@ -25,42 +25,66 @@ const rows = [
 	createData(
 		"1",
 		"Belgium",
-		<a href="https://www.facebook.com/StandwithHK.Belgium/">
+		<a
+			href="http://www.facebook.com/StandwithHK.Belgium/"
+			target="_blank"
+			rel="noopener noreferrer"
+		>
 			Stand With Hong Kong - Belgium
 		</a>
 	),
 	createData(
 		"2",
 		"Denmark",
-		<a href="https://www.facebook.com/DenmarkSupportingHongKong/">
+		<a
+			href="http://www.facebook.com/DenmarkSupportingHongKong/"
+			target="_blank"
+			rel="noopener noreferrer"
+		>
 			Støt Hong Kong 支持香港 Support Hong Kong
 		</a>
 	),
 	createData(
 		"3",
 		"France",
-		<a href="https://www.facebook.com/HKparapluies/">
+		<a
+			href="http://www.facebook.com/HKparapluies/"
+			target="_blank"
+			rel="noopener noreferrer"
+		>
 			Les parapluies de Hong Kong
 		</a>
 	),
 	createData(
 		"4",
 		"Germany",
-		<a href="https://www.facebook.com/germanyswhk/">
+		<a
+			href="http://www.facebook.com/germanyswhk/"
+			target="_blank"
+			rel="noopener noreferrer"
+		>
 			Germany Stand with Hong Kong
 		</a>
 	),
 	createData(
 		"5",
 		"Ireland",
-		<a href="https://www.facebook.com/democracy4hkinireland/">
+		<a
+			href="http://www.facebook.com/democracy4hkinireland/"
+			target="_blank"
+			rel="noopener noreferrer"
+		>
 			Democracy for HK in Ireland
 		</a>
 	),
 	createData(
 		"6",
 		"Italy",
-		<a href="https://www.facebook.com/antielab.italy/">
+		<a
+			href="http://www.facebook.com/antielab.italy/"
+			target="_blank"
+			rel="noopener noreferrer"
+		>
 			Free Hong Kong - Pagina Italiana per la Libertà e la Democrazia a
 			Hong Kong
 		</a>
@@ -68,47 +92,77 @@ const rows = [
 	createData(
 		"7",
 		"",
-		<a href="https://www.facebook.com/AntielabMN/">
+		<a
+			href="http://www.facebook.com/AntielabMN/"
+			target="_blank"
+			rel="noopener noreferrer"
+		>
 			Stand with Hong Kong - Italy
 		</a>
 	),
 	createData(
 		"8",
 		"Netherlands",
-		<a href="https://www.facebook.com/nl4hk/">Netherlands for Hong Kong</a>
+		<a
+			href="http://www.facebook.com/nl4hk/"
+			target="_blank"
+			rel="noopener noreferrer"
+		>
+			Netherlands for Hong Kong
+		</a>
 	),
 	createData(
 		"9",
 		"Norway",
-		<a href="https://www.facebook.com/standwithhk.norway/">
+		<a
+			href="http://www.facebook.com/standwithhk.norway/"
+			target="_blank"
+			rel="noopener noreferrer"
+		>
 			Hong Kong Committee in Norway
 		</a>
 	),
 	createData(
 		"10",
 		"Sweden",
-		<a href="https://www.facebook.com/SV4HK/">
+		<a
+			href="http://www.facebook.com/SV4HK/"
+			target="_blank"
+			rel="noopener noreferrer"
+		>
 			Sweden for Hong Kong / Sverige för Hongkong
 		</a>
 	),
 	createData(
 		"11",
 		"Switzerland",
-		<a href="https://www.facebook.com/Switzerland-Stands-with-Hong-Kong-111671970235213/?eid=ARBINXkZ8DOylYWeEqlXqmJoGScX5ZKdJem_HATfFRw_IQDRwRJSmvoAUAWEfyomOVpZBJ2bG6F5kDPt">
+		<a
+			href="http://www.facebook.com/Switzerland-Stands-with-Hong-Kong-111671970235213/?eid=ARBINXkZ8DOylYWeEqlXqmJoGScX5ZKdJem_HATfFRw_IQDRwRJSmvoAUAWEfyomOVpZBJ2bG6F5kDPt"
+			target="_blank"
+			rel="noopener noreferrer"
+		>
 			Switzerland Stands with Hong Kong
 		</a>
 	),
 	createData(
 		"12",
 		"",
-		<a href="https://www.facebook.com/hkersinswiterland/">
+		<a
+			href="http://www.facebook.com/hkersinswiterland/"
+			target="_blank"
+			rel="noopener noreferrer"
+		>
 			香港人在瑞士 Hongkongers in Switzerland
 		</a>
 	),
 	createData(
 		"13",
 		"United Kingdom",
-		<a href="https://www.facebook.com/DemocracyForHongKong/">
+		<a
+			href="http://www.facebook.com/DemocracyForHongKong/"
+			target="_blank"
+			rel="noopener noreferrer"
+		>
 			Democracy for Hong Kong - D4HK
 		</a>
 	)
